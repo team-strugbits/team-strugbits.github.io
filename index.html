@@ -414,8 +414,20 @@
         body {
           margin: 0% !important;
           overflow-x: hidden; /* Hide horizontal scrollbar */
+          overflow-y:scroll;
         }
       
+        ::-webkit-scrollbar {
+          background:transparent;
+          width:10px;
+        }
+        ::-webkit-scrollbar-track {
+          background:transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+          background:#999;
+        }
+        
         .stone {
           display:none;
           position: absolute;
